@@ -19,7 +19,7 @@ This repo hosts the RTL test code.
 
 ### Unfinished Tasks ###
 1. Installation of istio: Since Istio apparently doesn't play as nicely with helm as it used to, I was looking for a way to install it without needing to run additional istioctl commands. But opted to set this aside since I didn't have a lot of time to dedicate to this test.
-2. Install multiple environments: Didn't have time to dedicate to this step. I will however outline below what changes I would make for a multi-environment config.
+2. Install multiple environments: Added code at the last minute to handle multiple installs by defining the namespace. Didn't have a whole lot of time to dedicate to this step. I will however outline below what changes I would make for a more robust multi-environment config. As right now, the CIDR ranges could potentially collide.
 3. Monitoring and Alerting: If more time were available, I would have setup alerting in stackdriver via the google_monitoring_alert_policy, at the very least using uptime checks, but also ideally using resource monitoring thresholds.
 4. Private cluster: Started working on this, commented out the code as I didn't have time to finish it.
 
